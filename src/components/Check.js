@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function Check() {
     return (
         <>
-            <Card className="text-center position-absolute top-50 start-50 translate-middle">
+            <Card className="text-center position-absolute top-50 start-50 translate-middle w-90 p-4 bg-dark">
                 <div className="d-grid gap-2">
                     <Link to='/select/1'>
                         <Button variant="primary" size="lg" disabled>
