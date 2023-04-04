@@ -6,7 +6,7 @@ import Form from 'react-bootstrap/Form';
 const LoginForm = () => {
   return (
     <>
-      <Card className="text-center position-absolute top-50 start-50 translate-middle">
+      <Card className=" position-absolute top-50 start-50 translate-middle">
         <Card.Header><h3>Log In</h3></Card.Header>
         <Form className='mx-3 my-3'>
           <Form.Group className="mb-3" controlId="formBasicEmail">
