@@ -1,4 +1,4 @@
-import {Route, Routes} from 'react-router-dom';
+import {HashRouter, Route, Routes} from 'react-router-dom';
 import './App.css';
 import NavBar from './components/NavBar';
 import Welcome from './components/Welcome';
@@ -12,6 +12,7 @@ import Nav from './components/Nav';
 function App() {
   return (
     <div>
+      <HashRouter>
       <Nav/>
       <NavBar />
       <Routes>
@@ -24,6 +25,7 @@ function App() {
         <Route path="/select/3" element={<PageNotFound/>} />
         <Route path="/select/4" element={<PageNotFound/>} />
       </Routes>
+      </HashRouter>
     </div>
   );
 }
