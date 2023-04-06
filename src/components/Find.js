@@ -5,7 +5,7 @@ function Find() {
   return (
     <>
       <Link to="/check">
-        <button type="button" class="btn btn-primary position-absolute" data-mdb-ripple-unbound="true" style={{ bottom: '10%', right: '10%' }}>
+        <button type="button" className="btn btn-primary position-absolute" data-mdb-ripple-unbound="true" style={{ bottom: '10%', right: '10%' }}>
           Chech Spot?
         </button>
       </Link>
@@ -14,9 +14,9 @@ function Find() {
           width="100%"
           height="95%"
           style={{ border: 0 }}
-          allowfullscreen=""
+          allowFullScreen=""
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
+          referrerPolicy="no-referrer-when-downgrade"
           title="myFrame">
         </iframe>
       </div>
