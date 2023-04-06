@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes} from 'react-router-dom';
 import './App.css';
 import NavBar from './components/NavBar';
 import Welcome from './components/Welcome';
@@ -15,7 +15,7 @@ function App() {
       <Nav/>
       <NavBar />
       <Routes>
-        <Route exact path="/" element={<Welcome/>} />
+        <Route path="/" element={<Welcome/>} />
         <Route path="/find" element={<Find/>} />
         <Route path="/account" element={<Account/>} />
         <Route path="/check" element={<Check/>} />
