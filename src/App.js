@@ -1,4 +1,4 @@
-import {HashRouter, Route, Routes} from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import NavBar from './components/NavBar';
 import Welcome from './components/Welcome';
@@ -13,18 +13,18 @@ function App() {
   return (
     <div>
       <HashRouter>
-      <Nav/>
-      <NavBar />
-      <Routes>
-        <Route exact path="/" element={<Welcome/>} />
-        <Route path="/find" element={<Find/>} />
-        <Route path="/account" element={<Account/>} />
-        <Route path="/check" element={<Check/>} />
-        <Route path="/select/2" element={<Select/>} />
-        <Route exact path="/select/1" element={<PageNotFound/>} />
-        <Route path="/select/3" element={<PageNotFound/>} />
-        <Route path="/select/4" element={<PageNotFound/>} />
-      </Routes>
+        <Nav />
+        <NavBar />
+        <Routes>
+          <Route exact path="/" element={<Welcome />} />
+          <Route path="/find" element={<Find />} />
+          <Route path="/account" element={<Account />} />
+          <Route path="/check" element={<Check />} />
+          <Route path="/select/2" element={<Select />} />
+          <Route exact path="/select/1" element={<PageNotFound />} />
+          <Route path="/select/3" element={<PageNotFound />} />
+          <Route path="/select/4" element={<PageNotFound />} />
+        </Routes>
       </HashRouter>
     </div>
   );
