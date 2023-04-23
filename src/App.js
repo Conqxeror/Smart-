@@ -1,13 +1,13 @@
-import { HashRouter, Route, Routes } from 'react-router-dom';
-import './App.css';
-import NavBar from './components/NavBar';
-import Welcome from './components/Welcome';
-import Find from './components/Find';
-import Account from './components/Account';
-import Check from './components/Check';
-import Select from './components/Select';
-import PageNotFound from './components/PageNotFound';
-import Nav from './components/Nav';
+import { HashRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
+import NavBar from "./components/NavBar";
+import Welcome from "./components/Welcome";
+import Find from "./components/Find";
+import Account from "./components/Account";
+import Check from "./components/Check";
+import Select from "./components/Select";
+import PageNotFound from "./components/PageNotFound";
+import Nav from "./components/Nav";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
         <Nav />
         <NavBar />
         <Routes>
-          <Route exact path="/" element={<Welcome />} />
+          <Route exact path="/Smart-Parking" element={<Welcome />} />
           <Route path="/find" element={<Find />} />
           <Route path="/account" element={<Account />} />
           <Route path="/check" element={<Check />} />
