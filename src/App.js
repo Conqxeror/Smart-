@@ -16,7 +16,7 @@ function App() {
         <Nav />
         <NavBar />
         <Routes>
-          <Route exact path="/Smart-Parking" element={<Welcome />} />
+          <Route exact path="/" element={<Welcome />} />
           <Route path="/find" element={<Find />} />
           <Route path="/account" element={<Account />} />
           <Route path="/check" element={<Check />} />
