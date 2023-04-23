@@ -48,18 +48,20 @@ export default function Select() {
       // Update the UI based on the "motorStatus" value
       if (motorStatus === 0) {
         document.getElementById("motorStatus").textContent = "Unlocked";
+        document.getElementById("motorStatus").style.color = "red";
       } else if (motorStatus === 1) {
         document.getElementById("motorStatus").textContent = "Locked";
+        document.getElementById("motorStatus").style.color = "green";
       }
     });
   }, []);
 
   return (
     <>
-      <Card className="text-center position-absolute top-50 start-50 translate-middle">
+      <Card className="text-center position-absolute top-50 start-50 translate-middle p-4 gap-3 bg-dark">
         <Button id="activateButton">Activate</Button>
         <Button id="deactivateButton">Deactivate</Button>
-        <p>
+        <p className="text-light">
           Motor status: <span id="motorStatus">Unlocked</span>
         </p>
       </Card>
